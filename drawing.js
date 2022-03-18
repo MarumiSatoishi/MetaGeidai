@@ -139,18 +139,18 @@ $(function () {
 });
 
 function drawChecked() {
-    document.getElementById('choice').src ='drawBox.png';
-    document.getElementById('draw').src = 'drawChecked.png';
-    document.getElementById('eraser').src = 'eraser.png';
-    document.getElementById('sizeImg').src = 'drawSize.png';
+    document.getElementById('choice').src ='img/drawBox.png';
+    document.getElementById('draw').src = 'img/drawChecked.png';
+    document.getElementById('eraser').src = 'img/eraser.png';
+    document.getElementById('sizeImg').src = 'img/drawSize.png';
     $("#slider").toggleClass("Erase");
 }
 
 function eraserChecked() {
-    document.getElementById('choice').src = 'eraseBox.png';
-    document.getElementById('eraser').src = 'eraserChecked.png';
-    document.getElementById('draw').src = 'draw.png';
-    document.getElementById('sizeImg').src = 'eraseSize.png';
+    document.getElementById('choice').src = 'img/eraseBox.png';
+    document.getElementById('eraser').src = 'img/eraserChecked.png';
+    document.getElementById('draw').src = 'img/draw.png';
+    document.getElementById('sizeImg').src = 'img/eraseSize.png';
     $("#slider").toggleClass("Erase");
 }
 

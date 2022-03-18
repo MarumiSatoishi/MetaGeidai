@@ -21,19 +21,19 @@
 
     <div class="tools-area">
         <div class="media-area">
-            <p><img id="choice" src="drawBox.png"></p>
+            <p><img id="choice" src="img/drawBox.png"></p>
             <label class="form-check-label">
                 <input class="form-check-input" type="radio" name="mode" value="1" checked>
-                <img id="draw" src="drawChecked.png" onClick="drawChecked()" title="描く">
+                <img id="draw" src="img/drawChecked.png" onClick="drawChecked()" title="描く">
             </label>
             <label class="form-check-label">
                 <input class="form-check-input" type="radio" name="mode" value="2">
-                <img id="eraser" src="eraser.png" onClick="eraserChecked()" title="消す">
+                <img id="eraser" src="img/eraser.png" onClick="eraserChecked()" title="消す">
             </label>
         </div>
         <br>
         <div id="size-area">
-            <p><img id="sizeImg" src="drawSize.png" title="太さ" width="180px" height="90px"></p>
+            <p><img id="sizeImg" src="img/drawSize.png" title="太さ" width="180px" height="90px"></p>
             <input id="slider" type="range" min="10" max="100" value="10" onChange="sizeChange(this.value)">
             <span id="size">10</span>
         </div>
