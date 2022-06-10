@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="archive.css">
+    <title>Geidai Meta Studio Archive</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/material-design-inspired-color-picker@1.7.2/dist/md-color-picker.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="splash">
+        <div id="splash_logo">
+            <p><img src="img/logo.png" alt="" class="fadeUp"></p>
+        </div>
+    </div>
+
+    <div class="splashbg1"></div>
+    <div class="splashbg2"></div>  
+
+    <div id="header">
+        <p>
+            <a href="https://www.geidai.ac.jp/" target="_blank"><img id="logo" src="img/logo.png">
+            <img id="textlogo" src="img/textlogo.png"></a>
+            <div id="DigitalArchive">Meta Studio Archive</div>
+        </p>
+        <div id="fa">
+            <a href="index.html"><img src="img/fa.svg"></a>
+        </div>
+        <div id="m">
+            <a href="indexM.html"><img src="img/m.svg" onClick="mOpen()"></a>
+        </div>
+    </div>
+
+    <div class="mattterport">
+        <iframe src="https://my.matterport.com/show/?m=w9qpqdrTPhe" name="cFrame"></iframe>
+    </div>
+
+    <div id="map-open">
+        <img src="img/map-open.png" onClick="mapOpen()" width="40em">
+    </div>
+
+    <div id="map-close">
+        <img src="img/map-close.png" onClick="mapClose()" width="40em">
+    </div>
+
+    <div id="locate">
+        <div id="ueno" onClick="map1()"><button>◀︎ 上野</button></div>
+        <div id="toride" onClick="map2()"><button>取手 ▶︎</button></div>
+    </div>
+
+    <div id="map1">
+        <div id="ueno-contents">
+            <div id="contents1">
+                    <img src="img/1.png" onClick="detail1()" class="cap" data-tippy-content="絵画棟">
+            </div>
+            <div id="contents2">
+                <img src="img/2.png" onClick="detail1()" class="cap" data-tippy-content="彫刻棟">
+            </div>
+            <div id="contents3">
+                <img src="img/4.png"onClick="detail1()" class="cap" data-tippy-content="中央棟">
+            </div>  
+            <div id="contents4">
+                <img src="img/5.png" class="cap" data-tippy-content="金工棟">
+            </div>
+            <div id="contents5">
+                <img src="img/6.png" class="cap" data-tippy-content="大学美術館">
+            </div>
+            <div id="contents6">
+                <img src="img/7.png" class="cap" data-tippy-content="藝大の森">
+            </div>
+            <div id="contents7">
+                <img src="img/8.png" class="cap" data-tippy-content="総合工房棟">
+            </div>
+            <div id="contents8">
+                <img src="img/9.png" class="cap" data-tippy-content="附属図書館">
+            </div>
+            <div id="contents9">
+                <img src="img/10.png" class="cap" data-tippy-content="陳列館">
+            </div>
+        </div>
+        <div id="mapframe1">
+            <p><img src="img/map1.png"></p>
+        </div>
+    </div>
+
+    <div id="detail1">
+        <div id="detailframe1"><img src="img/detail1.png"></div>
+        
+        <div id="detail1_contents1">
+            <img src="img/12.png" onClick="part1()" class="cap" data-tippy-content="test">
+        </div>
+        <div id="detail1_contents2">
+            <img src="img/12.png" onClick="part1()" class="cap" data-tippy-content="test">
+        </div>
+    </div>
+
+    <div id="part1">
+        <div id="partframe1"><img src="img/part1.png"></div>
+        
+        <div id="part1_contents1">
+            <img src="img/12.png" onClick="newURL1()" class="cap" data-tippy-content="test">
+        </div>
+    </div>
+
+    <div id="return1">
+        <img src="img/return.png" onClick="map1()">
+    </div>
+
+    <div id="return11">
+        <img src="img/return.png" onClick="detail1()">
+    </div>
+
+    <div id="caption">
+        <div id="caption1">絵画棟</div>
+        <div id="caption2">彫刻棟</div>
+        <div id="caption3">中央棟</div>
+        <div id="caption4">金工棟</div>
+        <div id="caption5">大学美術館</div>
+        <div id="caption6">藝大の森</div>
+        <div id="caption7">総合工房棟</div>
+        <div id="caption8">附属図書館</div>
+        <div id="caption9">陳列館</div>
+        <div id="caption11">取手</div>
+    </div>
+
+    <div id="caption-detail">
+        <div id="captionA">工房①</div>
+        <div id="captionB">工房②</div>
+        <div id="captionC">工房③</div>
+        <div id="captionD">工房④</div>
+    </div>
+
+    <div id="map2">
+        <div id="mapframe2">
+            <p><img src="img/t.jpeg"></p>
+        </div>
+        <div id="contents11">
+            <img src="img/11.png" onClick="detail2()" class="cap" data-tippy-content="test">
+        </div>
+    </div>
+
+    <div id="detail2">
+        <div id="detailframe2"><img src="img/detail2.png"></div>
+
+        <div id="detail2_contents1">
+            <img src="img/13.png" onClick="part2()" class="cap" data-tippy-content="test">
+        </div>
+        <div id="detail2_contents2">
+            <img src="img/13.png" onClick="part2()" class="cap" data-tippy-content="test">
+        </div>
+    </div>
+
+    <div id="part2">
+        <div id="partframe2"><img src="img/part2.png"></div>
+        
+        <div id="part2_contents1">
+            <img src="img/13.png" onClick="newURL3()" class="cap" data-tippy-content="test">
+        </div>
+    </div>
+
+    <div id="return2">
+        <img src="img/return.png" onClick="map2()">
+    </div>
+
+    <div id="return22">
+        <img src="img/return.png" onClick="detail2()">
+    </div>
+
+    <script type="text/javascript" src="archive.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/js/4-1-4.js"></script>
+    <!-- <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script> -->
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-3-1/js/9-3-1.js"></script>
+</body>
+
+</html>

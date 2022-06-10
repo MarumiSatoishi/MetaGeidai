@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tokyo Geidai Digital Archive(Music)</title>
+
+    <style type="text/css">
+        #text {
+            color:#9fa09e;
+            position: absolute;
+            left: 38%;
+            top: 33%;
+            font-size: 3em;
+            font-weight: 900;
+        }
+
+        #return {
+            position: absolute;
+            width: 3%;
+            left: 50%;
+            top: 50%;
+        }
+
+        #return img:hover {
+            transform: scale(1.5,1.5);
+            transition: all 0.5s 0s ease;
+            filter: saturate(110%);
+            cursor: pointer;
+            z-index: 3;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="text">Coming soon ...</div>
+<!-- 
+    <div id="return">
+        <a href="index.html"><img src="img/return.svg" onclick="close()"></a>
+    </div> -->
+
+    <div id="return">
+        <img src="img/return.svg" onClick="back()">
+    </div>
+
+    <script type="text/javascript">
+        function back(){
+            window.close();
+        }
+    </script>
+    
+</body>
+
+</html>
