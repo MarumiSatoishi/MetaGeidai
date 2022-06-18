@@ -1,0 +1,305 @@
+@media screen and (min-width: 521px) and (max-width: 960px) {
+
+#logo {
+	height: 6%;
+	position: absolute;
+	left: 5%;
+	padding: auto;
+	margin: auto;
+	top: 2%;
+}
+
+#textlogo {
+	height: 2.5%;
+	position: absolute;
+	left: 15%;
+	padding: auto;
+	margin: auto;
+	top: 3%;
+}
+
+#DigitalArchive {
+	color: #abb1b5;
+	font-family: 'Rajdhani', sans-serif;
+	top: 7%;
+	bottom: 95%;
+	left: 15%;
+	right: 10%;
+	font-size: 120%;
+	position: absolute;
+	padding: auto;
+	margin: auto;
+}
+
+#fa img{
+	position: absolute;
+	z-index: 1;
+	width: 5%;
+	left: 80%;
+	right:10%;
+	top:4%;
+	bottom:97%;
+}
+
+#m img{
+	position: absolute;
+	z-index: 1;
+	width: 5%;
+	left: 88%;
+	right:8%;
+	top:4%;
+	bottom:97%;
+	opacity: 0.5;
+}
+
+iframe {
+	position: absolute;
+	left: 3%;
+	top: 10%;
+	margin: 1%;
+	width: 92%;
+	height: 85%;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+	max-width: 100%;
+	display: block;
+}
+
+#ueno{
+	position: absolute;
+	padding: auto;
+	top: 49%;
+	bottom: 50%;
+	left: 67%;
+	right: 22%;
+	margin: auto;
+}
+
+/* #ueno button {
+	padding: 0.5em 1em;
+	font-size:110%;
+	color: #6c9bd2;
+	font-weight: bold;
+	background-color: #ffffff;
+	border: none;
+	border-radius: 10%;
+	transition: all 0.4s ease 0s;
+	cursor: pointer;
+}
+
+#ueno button:hover {
+	background-color: #6c9bd2;
+	color: #fff;
+	transform: translateY(-7px);
+} */
+
+#toride{
+	position: absolute;
+	padding: auto;
+	top: 49%;
+	bottom: 50%;
+	left: 84%;
+	right: 5%;
+	margin: auto;
+}
+
+/* #toride button {
+	padding: 0.5em 1em;
+	font-size: 110%;
+	background-color: #fff;
+	color: #89c997;
+	font-weight: bold;
+	border: none;
+	border-radius: 10%;
+	transition: all 0.4s ease 0s;
+	cursor: pointer;
+}
+#toride button:hover {
+	background-color: #89c997;
+	color: #fff;
+	transform: translateY(-7px);
+} */
+
+#mapframe1 img {
+	position: absolute;
+	padding: auto;
+	top:60%;
+	bottom: 20%;
+	left:59%;
+	right: 25%;
+	margin: auto;
+	width: 35%;
+	height: 32%;
+	z-index: 1;
+}
+
+/* #ueno-contents img:hover {
+	transform: scale(1.2,1.2);
+	transition: all 0.5s 0s ease;
+	filter: saturate(110%);
+	cursor: pointer;
+	z-index: 3;
+} */
+
+#contents1 img {
+	position: absolute;
+	z-index: 2;
+	width: 12%;
+	left: 79%;
+	right: 15%;
+	top: 57%;
+	bottom: 40%;;
+}
+
+#contents2 img {
+	position: absolute;
+	z-index: 2;
+	width: 9%;
+	left: 69.5%;
+	right:20%;
+	top: 60%;
+	bottom: 30%;
+}
+
+#contents3 img {
+	position: absolute;
+	z-index: 2;
+	width: 11%;
+	left: 72.5%;
+	right: 20%;
+	top: 64.5%;
+	bottom: 34%;
+}
+
+#contents4 img {
+	position: absolute;
+	z-index: 2;
+	width: 11%;
+	left: 65%;
+	right: 20%;
+	top: 66.5%;
+	bottom: 20%;
+}
+
+#contents5 img {
+	position: absolute;
+	z-index: 2;
+	width: 6%;
+	left: 85%;
+	right: 14%;
+	top: 65%;
+	bottom: 32.8%;
+}
+
+#contents6 img {
+	position: absolute;
+	z-index: 2;
+	width: 6%;
+	left: 77.5%;
+	right: 17%;
+	top: 71%;
+	bottom: 26%;
+}
+
+#contents7 img {
+	position: absolute;
+	z-index: 2;
+	width: 11%;
+	left: 72%;
+	right: 20%;
+	top: 75%;
+	bottom: 20%;
+}
+
+#contents8 img {
+	position: absolute;
+	z-index: 2;
+	width: 6%;
+	left: 81%;
+	right: 15%;
+	top: 75.5%;
+	bottom: 20%;
+}
+
+#contents9 img {
+	position: absolute;
+	z-index: 2;
+	width: 1.9%;
+	left: 89%;
+	right: 5%;
+	top: 76%;
+	bottom: 20%;
+}
+
+#return1 img{
+	position: absolute;
+	z-index: 2;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	width: 2.5%;
+	top:77%;
+	bottom: 23%;
+	left:91%;
+	right: 9%;
+}
+
+/* #return1 img:hover {
+	transform: scale(1.5,1.5);
+	transition: all 0.5s 0s ease;
+	filter: saturate(110%);
+	cursor: pointer;
+	z-index: 3;
+	opacity: 1;
+} */
+
+#caption, #caption-detail{
+	position: absolute;
+	z-index: 2;
+	left:74%;
+	top: 78%;
+	writing-mode: vertical-rl;
+	font-family: 'Rajdhani', sans-serif;
+	padding: auto;
+	margin: auto;
+	font-size: 140%;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 5%;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#map-close img{
+	position: absolute;
+	width: 7%;
+	top:88%;
+	bottom: 10%;
+	left:86%;
+	right: 10%;
+}
+
+/* #map-close img:hover {
+	transform: scale(1.5,1.5);
+	transition: all 0.5s 0s ease;
+	filter: saturate(110%);
+	cursor: pointer;
+	z-index: 3;
+} */
+
+#map-open img{
+	position: absolute;
+	width: 8%;
+	top:85%;
+	bottom: 10%;
+	left:85%;
+	right: 10%;
+}
+
+/* #map-open img:hover {
+	transform: scale(1.5,1.5);
+	transition: all 0.5s 0s ease;
+	filter: saturate(110%);
+	cursor: pointer;
+	z-index: 3;
+} */
+
+}

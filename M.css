@@ -48,6 +48,8 @@ body {
 	}
 }
 
+@media screen and (min-width: 481px){
+
 #logo {
 	height: 60px;
 	position: absolute;
@@ -287,4 +289,16 @@ body.appear .splashbg2{
 	filter: saturate(110%);
 	cursor: pointer;
 	z-index: 3;
+}
+
+}
+
+@media screen and (max-width: 480px){
+
+img {
+
+width: 100% ;
+
+}
+
 }

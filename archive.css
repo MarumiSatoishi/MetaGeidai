@@ -4,7 +4,13 @@ body {
 	background-color: #fff;
 	background-size: 100%;
 	text-align: left;
-	}
+	font-size: 1em;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
 
 #splash {
 	position: absolute;
@@ -49,30 +55,31 @@ body {
 }
 
 #logo {
-	height: 60px;
+	height: 8%;
 	position: absolute;
-	left: 4em;
+	left: 5%;
 	padding: auto;
 	margin: auto;
-	top: 1em;
+	top: 2%;
 }
 
 #textlogo {
-	height: 35px;
+	height: 5%;
 	position: absolute;
-	left: 9em;
+	left: 11%;
 	padding: auto;
 	margin: auto;
-	top: 1.8em;
+	top: 3.5%;
 }
 
 #DigitalArchive {
 	color: #abb1b5;
-	/* font-weight: bold; */
 	font-family: 'Rajdhani', sans-serif;
-	top: 1em;
-	left: 15.5em;
-	font-size: 30px;
+	top: 2%;
+	bottom: 95%;
+	left: 40%;
+	right: 45%;
+	font-size: 160%;
 	position: absolute;
 	padding: auto;
 	margin: auto;
@@ -81,57 +88,56 @@ body {
 #fa img{
 	position: absolute;
 	z-index: 1;
-	width: 2.5%;
-	left: 76em;
-	top: 2em;
+	width: 3%;
+	left: 87%;
+	right:10%;
+	top: 3%;
+	bottom:97%;
 }
 
 #m img{
 	position: absolute;
 	z-index: 1;
-	width: 2.5%;
-	left: 80em;
-	top: 2em;
+	width: 2.6%;
+	left: 92%;
+	right:8%;
+	top: 3.5%;
+	bottom:97%;
 	opacity: 0.5;
 }
 
 iframe {
 	position: absolute;
-	/* padding: 10px; */
 	left: 3%;
 	top: 10%;
-	margin: 10px;
-	width: 1280px;
-	height: 670px;
+	margin: 1%;
+	width: 92%;
+	height: 85%;
 	border: none;
-	/* border: 1em solid #626063; */
 	border-radius: 5px;
-	/* border-image-source: url("img/frame.png"); */
-	/* border-image-slice: 30%;
-	border-image-width: 150px;
-	border-image-repeat: stretch;
-	border-image-outset: 15px; */
 	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+	max-width: 100%;
+	display: block;
 }
 
 #ueno{
 	position: absolute;
-	padding: 10px;
-	top:23em;
-	left: 62em;
-	margin: 20px;
+	padding: auto;
+	top: 46%;
+	bottom: 50%;
+	left: 75%;
+	right: 15%;
+	margin: auto;
 }
 
 #ueno button {
 	padding: 0.5em 1em;
-	font-size: 14px;
+	font-size: 90%;
 	color: #6c9bd2;
 	font-weight: bold;
 	background-color: #ffffff;
-	/* border: 2px solid #6c9bd2; */
 	border: none;
-	border-radius: 5px;
-	/* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); */
+	border-radius: 10%;
 	transition: all 0.4s ease 0s;
 	cursor: pointer;
 }
@@ -144,22 +150,22 @@ iframe {
 
 #toride{
 	position: absolute;
-	padding: 10px;
-	top:23em;
-	left: 72em;
-	margin: 20px;
+	padding: auto;
+	top: 46%;
+	bottom: 50%;
+	left: 85%;
+	right: 5%;
+	margin: auto;
 }
 
 #toride button {
 	padding: 0.5em 1em;
-	font-size: 14px;
+	font-size: 0.9em;
 	background-color: #fff;
 	color: #89c997;
-	/* border: 2px solid #89c997; */
 	font-weight: bold;
 	border: none;
-	border-radius: 5px;
-	/* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); */
+	border-radius: 10%;
 	transition: all 0.4s ease 0s;
 	cursor: pointer;
 }
@@ -171,12 +177,13 @@ iframe {
 
 #mapframe1 img {
 	position: absolute;
-	padding: 5px;
-	top:28em;
-	left:64em;
+	padding: auto;
+	top:54%;
+	bottom: 9%;
+	left:73.5%;
+	right: 26.5%;
 	margin: auto;
-	width: 12em;
-	/* height: 30em; */
+	width: 16%;
 	z-index: 1;
 }
 
@@ -191,73 +198,91 @@ iframe {
 #contents1 img {
 	position: absolute;
 	z-index: 2;
-	width: 5%;
-	left: 71em;
-	top: 29.5em;
+	width: 5.5%;
+	left: 82.5%;
+	right: 17.5;
+	top: 57%;
+	bottom: 43%;;
 }
 
 #contents2 img {
 	position: absolute;
 	z-index: 2;
-	width: 4%;
-	left: 67.5em;
-	top: 31em;
+	width: 4.5%;
+	left: 78%;
+	right: 22%;
+	top: 61%;
+	bottom: 39%;
 }
 
 #contents3 img {
 	position: absolute;
 	z-index: 2;
-	width: 4.5%;
-	left: 69em;
-	top: 33.5em;
+	width: 5.5%;
+	left: 80%;
+	right: 20%;
+	top: 66%;
+	bottom: 34%;
 }
 
 #contents4 img {
 	position: absolute;
 	z-index: 2;
-	width: 4.5%;
-	left: 66em;
-	top: 35em;
+	width: 5%;
+	left: 76.5%;
+	right: 23.5%;
+	top: 70%;
+	bottom: 30%;
 }
 
 #contents5 img {
 	position: absolute;
 	z-index: 2;
 	width: 2.5%;
-	left: 73.5em;
-	top: 34em;
+	left: 85.8%;
+	right: 14.2;
+	top: 67.2%;
+	bottom: 32.8%;
 }
 
 #contents6 img {
 	position: absolute;
 	z-index: 2;
 	width: 2.5%;
-	left: 71em;
-	top: 37.2em;
+	left: 83%;
+	right: 17%;
+	top: 74%;
+	bottom: 26%;
 }
 
 #contents7 img {
 	position: absolute;
 	z-index: 2;
 	width: 5%;
-	left: 68.8em;
-	top: 39.3em;
+	left: 79.5%;
+	right: 20.5%;
+	top: 79%;
+	bottom: 21%;
 }
 
 #contents8 img {
 	position: absolute;
 	z-index: 2;
 	width: 2.5%;
-	left: 72.5em;
-	top: 39.8em;
+	left: 84%;
+	right: 16%;
+	top: 80%;
+	bottom: 20%;
 }
 
 #contents9 img {
 	position: absolute;
 	z-index: 2;
-	width: 0.8%;
-	left: 75em;
-	top: 40em;
+	width: 0.9%;
+	left: 87%;
+	right: 13%;
+	top: 79.5%;
+	bottom: 20.5%;
 }
 
 #mapframe2 img {
@@ -354,11 +379,12 @@ iframe {
 #return1 img{
 	position: absolute;
 	z-index: 2;
-	width: 2.5%;
-	left: 78em;
-	top: 38em;
-	/* opacity: 0.5; */
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	width: 2.5%;
+	top:77%;
+	bottom: 23%;
+	left:91%;
+	right: 9%;
 }
 
 #return1 img:hover {
@@ -496,17 +522,18 @@ iframe {
 #caption, #caption-detail{
 	position: absolute;
 	z-index: 2;
-	left:72em;
-	top: 44em;
+	left:74%;
+	top: 78%;
 	writing-mode: vertical-rl;
-	padding: 0.5em;
-	margin: 1em;
-	font-size: 14px;
-	color: #484848;
+	font-family: 'Rajdhani', sans-serif;
+	padding: auto;
+	margin: auto;
+	font-size: 140%;
+	color: #fff;
 	font-weight: bold;
-	background-color: #fff;
+	/* background-color: #fff; */
 	/* border: none; */
-	border-radius: 2px;
+	border-radius: 5%;
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -517,7 +544,6 @@ iframe {
 body.appear .splashbg1, body.appear .splashbg2{
 	display:block;
 }
-
 
 body.appear .splashbg1{
 	animation-name:PageAnime;
@@ -547,7 +573,6 @@ body.appear .splashbg1{
 	transform:scaleX(0);
 	}
 }
-
 
 body.appear .splashbg2{
 	animation-name:PageAnime2;
@@ -581,9 +606,11 @@ body.appear .splashbg2{
 
 #map-close img{
 	position: absolute;
-	/* padding: 3px; */
-	top:42em;
-	left:78em;
+	width: 3%;
+	top:84%;
+	bottom: 16%;
+	left:91%;
+	right: 9%;
 }
 
 #map-close img:hover {
@@ -596,9 +623,11 @@ body.appear .splashbg2{
 
 #map-open img{
 	position: absolute;
-	/* padding: 3px; */
-	top:42em;
-	left:78em;
+	width: 3%;
+	top:84%;
+	bottom: 16%;
+	left:91%;
+	right: 9%;
 }
 
 #map-open img:hover {
