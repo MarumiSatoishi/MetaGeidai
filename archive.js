@@ -2,7 +2,8 @@ window.onload = function() {
     document.getElementById("map2").style.display ="none";
     document.getElementById("detail1").style.display ="none";
     document.getElementById("detail2").style.display ="none";
-    document.getElementById("part1").style.display ="none";
+    document.getElementById("architecture").style.display ="none";
+    document.getElementById("design").style.display ="none";
     document.getElementById("part2").style.display ="none";
 
     document.getElementById("return1").style.display ="none";
@@ -21,13 +22,20 @@ window.onload = function() {
     document.getElementById("caption9").style.display ="none";
     document.getElementById("caption11").style.display ="none";
 
-    document.getElementById("captionA").style.display ="none";
-    document.getElementById("captionB").style.display ="none";
-    document.getElementById("captionC").style.display ="none";
-    document.getElementById("captionD").style.display ="none";
-
     document.getElementById("map-open").style.display ="none";
+
+    document.getElementById("#detail1_contents1").style.display ="none";
+    document.getElementById("#detail1_contents2").style.display ="none";
+    document.getElementById("#detail1_contents3").style.display ="none";
+
+    document.getElementById("#architecture_contents1").style.display ="none";
+    document.getElementById("#architecture_contents2").style.display ="none";
+
+    document.getElementById("#design_contents1").style.display ="none";
+    document.getElementById("#design_contents2").style.display ="none";
 }
+
+$("#reserve").hide();
 
 let tmp = 1;
 
@@ -39,10 +47,13 @@ function map1()
     $("#detail2").hide();
     $("#return1").hide();
     $("#return2").hide();
-    $("#return11").hide();
+    // $("#return11").hide();
     $("#return22").hide();
-    $("#part1").hide();
+    $("#architecture").hide();
+    $("#design").hide();
     $("#part2").hide();
+    $("#ueno").show();
+    $("#toride").show();
 
     tmp = 1;
 }
@@ -56,7 +67,7 @@ function map2(){
     $("#return2").hide();
     $("#return11").hide();
     $("#return22").hide();
-    $("#part1").hide();
+    $("#architecture").hide();
     $("#part2").hide();
 
     tmp = 2;
@@ -69,7 +80,13 @@ function detail1()
     $("#detail1").show();
     $("#return1").show();
     $("#return11").hide();
-    $("#part1").hide();
+    $("#architecture").hide();
+    $("#design").hide();
+    $("#ueno").hide();
+    $("#toride").hide();
+    $("#detail1_contents1").hide();
+    $("#detail1_contents2").hide();
+    $("#detail1_contents3").hide();
 
     tmp = 11;
 }
@@ -86,14 +103,24 @@ function detail2()
     tmp = 22;
 }
 
-function part1()
+function architecture()
 {
-    $("#detail1").hide();
-    $("#part1").show();
-    $("#return1").hide();
     $("#return11").show();
+    $("#detail1").hide();
+    $("#architecture").show();
+    $("#return1").hide();
 
     tmp = 111;
+}
+
+function design()
+{
+    $("#return11").show();
+    $("#detail1").hide();
+    $("#design").show();
+    $("#return1").hide();
+
+    tmp = 112;
 }
 
 function part2()
@@ -108,22 +135,23 @@ function part2()
 
 function newURL1()
 {
-document.cFrame.location.href = "https://my.matterport.com/show/?m=jkDpPMPdUo6";
+document.cFrame.location.href = "https://my.matterport.com/show/?m=jkDpPMPdUo6&play=1&dh=0&qs=1&help=0&nt=1&brand=0&gt=0&hr=0&mls=2&vr=0";
 }
 
 function newURL2()
 {
-document.cFrame.location.href = "https://my.matterport.com/show/?m=dRcLDKaeRjL";
+document.cFrame.location.href = "https://my.matterport.com/show/?m=p1ficG993Lk&play=1&dh=0&qs=1&help=0&nt=1&brand=0&gt=0&hr=0&mls=2&vr=0&qs=1";
 }
 
 function newURL3()
 {
-document.cFrame.location.href = "https://my.matterport.com/show/?m=p1ficG993Lk";
+document.cFrame.location.href = "https://my.matterport.com/show/?m=5ihdy2kLvQr&play=1&dh=0&qs=1&help=0&nt=1&brand=0&gt=0&hr=0&mls=2&vr=0&qs=1";
 }
 
 function newURL4()
 {
-document.cFrame.location.href = "https://my.matterport.com/show/?m=w9qpqdrTPhe";
+$("#reserve").show();
+document.cFrame.location.href = "https://my.matterport.com/show/?m=9YWPia6Tced&cloudEdit=1&sr=-3.04,-1.26&ss=34&play=1&dh=0&help=0&nt=1&brand=0&gt=0&hr=0&mls=2&vr=0&qs=1";
 }
 
 $(window).on('load',function(){
@@ -211,44 +239,6 @@ $('#contents11').mouseleave(function() {
     $("#caption11").hide();
 });
 
-$('#detail1_contents1').hover(function() {
-    $("#captionA").show();
-});
-
-$('#detail1_contents1').mouseleave(function() {
-    $("#captionA").hide();
-});
-
-$('#detail1_contents2').hover(function() {
-    $("#captionB").show();
-});
-
-$('#detail1_contents2').mouseleave(function() {
-    $("#captionB").hide();
-});
-
-$('#detail2_contents1').hover(function() {
-    $("#captionC").show();
-});
-
-$('#detail2_contents1').mouseleave(function() {
-    $("#captionC").hide();
-});
-
-$('#detail2_contents2').hover(function() {
-    $("#captionD").show();
-});
-
-$('#detail2_contents2').mouseleave(function() {
-    $("#captionD").hide();
-});
-
-$(window).on('load',function(){
-    $("#splash_logo").fadeOut(function(){
-        $('body').addClass('appear');
-    });
-});
-
 function mapClose()
 {
     $("#locate").hide();
@@ -260,7 +250,8 @@ function mapClose()
     $("#return2").hide();
     $("#return11").hide();
     $("#return22").hide();
-    $("#part1").hide();
+    $("#architecture").hide();
+    $("#design").hide();
     $("#part2").hide();
     $("#map-open").show();
     $("#map-close").hide();
@@ -317,7 +308,14 @@ function mapOpen(){
     else if(tmp==111){
         $("#locate").show();
         $("#detail1").hide();
-        $("#part1").show();
+        $("#architecture").show();
+        $("#return1").hide();
+        $("#return11").show();
+    }
+    else if(tmp==112){
+        $("#locate").show();
+        $("#detail1").hide();
+        $("#design").show();
         $("#return1").hide();
         $("#return11").show();
     }
@@ -330,6 +328,14 @@ function mapOpen(){
     }
 }
 
-// function mOpen(){
-//     window.close();
-// }
+function mapshow1(){
+    $("#detail1_contents1").show();
+    $("#detail1_contents2").show();
+    $("#detail1_contents3").hide();
+}
+
+function mapshow2(){
+    $("#detail1_contents3").show();
+    $("#detail1_contents1").hide();
+    $("#detail1_contents2").hide();
+}

@@ -68,25 +68,25 @@
                 <img src="img/2.png" onClick="detail1()" class="cap" data-tippy-content="彫刻棟">
             </div>
             <div id="contents3">
-                <img src="img/3.png"onClick="detail1()" class="cap" data-tippy-content="中央棟">
+                <img src="img/3.png" onClick="detail1()" class="cap" data-tippy-content="中央棟">
             </div>  
             <div id="contents4">
-                <img src="img/4.png" class="cap" data-tippy-content="金工棟">
+                <img src="img/4.png" onClick="detail1()" class="cap" data-tippy-content="金工棟">
             </div>
             <div id="contents5">
-                <img src="img/5.png" class="cap" data-tippy-content="大学美術館">
+                <img src="img/5.png" onClick="detail1()" class="cap" data-tippy-content="大学美術館">
             </div>
             <div id="contents6">
-                <img src="img/6.png" class="cap" data-tippy-content="藝大の森">
+                <img src="img/6.png" onClick="detail1()" class="cap" data-tippy-content="藝大の森">
             </div>
             <div id="contents7">
-                <img src="img/7.png" class="cap" data-tippy-content="総合工房棟">
+                <img src="img/7.png" onClick="detail1()" class="cap" data-tippy-content="総合工房棟">
             </div>
             <div id="contents8">
-                <img src="img/8.png" class="cap" data-tippy-content="附属図書館">
+                <img src="img/8.png" onClick="detail1()" class="cap" data-tippy-content="附属図書館">
             </div>
             <div id="contents9">
-                <img src="img/9.png" class="cap" data-tippy-content="陳列館">
+                <img src="img/9.png" onClick="detail1()" class="cap" data-tippy-content="陳列館">
             </div>
         </div>
         <div id="mapframe1">
@@ -98,19 +98,56 @@
         <div id="detailframe1"><img src="img/detail1.png"></div>
         
         <div id="detail1_contents1">
-            <img src="img/12.png" onClick="part1()" class="cap" data-tippy-content="test">
+            <img src="img/2f.png">
         </div>
         <div id="detail1_contents2">
-            <img src="img/12.png" onClick="part1()" class="cap" data-tippy-content="test">
+            <img src="img/b1f.png">
+        </div>
+        <div id="detail1_contents3">
+            <img src="img/3f.png">
+        </div>
+        <div id="tag">
+            <div id="tag1" onClick="architecture()" onmouseover="mapshow1()">建築科</div>
+            <div id="tag2" onClick="design()" onmouseover="mapshow2()">デザイン科</div>
+            <div id="tag3" onClick="architecture()" onmouseover="mapshow1()">工芸科</div>
+            <div id="tag4" onClick="architecture()" onmouseover="mapshow2()">彫刻科</div>
         </div>
     </div>
 
-    <div id="part1">
-        <div id="partframe1"><img src="img/part1.png"></div>
-        
-        <div id="part1_contents1">
-            <img src="img/12.png" onClick="newURL1()" class="cap" data-tippy-content="test">
+    <div id="architecture">
+        <div id="architecture-2f">
+            <img src="img/2f-white.png">
         </div>
+        <div id="architecture-b1f">
+            <img src="img/b1f-white.png">
+        </div>
+        
+        <div id="architecture_contents1" onClick="newURL2()">
+            <img src="img/mos.png">
+        </div>
+        <div id="architecture_contents2" onClick="newURL1()">
+            <img src="img/sub.png">
+        </div>
+    </div>
+
+    <div id="design">
+        <div id="design-3f">
+            <img src="img/3f-white.png">
+        </div>
+        <div id="design-2f">
+            <img src="img/2f-white.png">
+        </div>
+        
+        <div id="design_contents1" onClick="newURL4()">
+            <img src="img/graphic.png">
+        </div>
+        <div id="design_contents2" onClick="newURL4()">
+            <img src="img/solid.png">
+        </div>
+    </div>
+
+    <div id="reserve">
+        <button><a href="https://sites.google.com/a/ml.geidai.ac.jp/design_r_reservation/" target=”_blank”>立体工房　予約フォーム</a></button>
     </div>
 
     <div id="return1">
@@ -134,19 +171,12 @@
         <div id="caption11">取手</div>
     </div>
 
-    <div id="caption-detail">
-        <div id="captionA">工房①</div>
-        <div id="captionB">工房②</div>
-        <div id="captionC">工房③</div>
-        <div id="captionD">工房④</div>
-    </div>
-
     <div id="map2">
         <div id="mapframe2">
             <p><img src="img/t.jpeg"></p>
         </div>
         <div id="contents11">
-            <img src="img/11.png" onClick="detail2()" class="cap" data-tippy-content="test">
+            <img src="img/11.png" onClick="detail2()">
         </div>
     </div>
 
@@ -154,10 +184,10 @@
         <div id="detailframe2"><img src="img/detail2.png"></div>
 
         <div id="detail2_contents1">
-            <img src="img/13.png" onClick="part2()" class="cap" data-tippy-content="test">
+            <img src="img/12.png" onClick="part2()">
         </div>
         <div id="detail2_contents2">
-            <img src="img/13.png" onClick="part2()" class="cap" data-tippy-content="test">
+            <img src="img/12.png" onClick="part2()">
         </div>
     </div>
 
@@ -165,7 +195,7 @@
         <div id="partframe2"><img src="img/part2.png"></div>
         
         <div id="part2_contents1">
-            <img src="img/13.png" onClick="newURL3()" class="cap" data-tippy-content="test">
+            <img src="img/12.png" onClick="newURL3()">
         </div>
     </div>
 
@@ -181,8 +211,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/js/4-1-4.js"></script>
-    <!-- <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script> -->
     <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-3-1/js/9-3-1.js"></script>
 </body>
 
